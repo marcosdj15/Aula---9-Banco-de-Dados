@@ -26,7 +26,7 @@ namespace CursoDesktop
             DBCliente dbCliente = new DBCliente();
             dbCliente.InserirCliente(txtNome.Text.Trim(),Convert.ToInt32(nuIdade.Value.ToString()), mskTelefone.Text.Trim(), txtEndereco.Text.Trim(), (rbMasculino.Checked ? 'M' : 'F'));
             
-            MessageBox.Show("Em Manutenção!");
+            MessageBox.Show("Cadastro Realizado com Sucesso");
         }
 
         private void btLimpar_Click(object sender, EventArgs e)
