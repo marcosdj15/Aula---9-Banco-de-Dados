@@ -27,6 +27,7 @@ namespace CursoDesktop
             dbCliente.InserirCliente(txtNome.Text.Trim(),Convert.ToInt32(nuIdade.Value.ToString()), mskTelefone.Text.Trim(), txtEndereco.Text.Trim(), (rbMasculino.Checked ? 'M' : 'F'));
             
             MessageBox.Show("Cadastro Realizado com Sucesso");
+            this.Close();
         }
 
         private void btLimpar_Click(object sender, EventArgs e)
